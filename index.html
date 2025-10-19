@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Luiz Felipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="habilidades.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+
+    <nav class="navegation">
+        <div class="nav-inner">
+            <ul class="menu">
+                <li><a href="#inicio" class="menu-link">Início</a></li>
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="inicio" class="cabeçalho">
+        <img src="images/header.png" class="foto-perfil">
+        <h1>Luiz Felipe</h1>
+        <p class="cabeçalho-sub-titulo">Desenvolvedor Front-End</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-texto">Olá! Meu nome é Luiz Felipe, sou um estudante de desenvolvimento front-end com foco
+                em criar interfaces modernas, funcionais e responsivas. Tenho experiência em HTML, CSS e JavaScript,
+                construindo páginas web otimizadas e bem estruturadas. Busco unir design e código para entregar
+                experiências digitais atrativas e eficientes. Estou sempre aprendendo novas tecnologias e aprimorando
+                minhas habilidades para evoluir meus projetos.</p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades-titulo">Habilidades</h2>
+        <div class="habilidades-grid">
+            <i class="ri-html5-fill" title="HTML5"></i>
+            <i class="ri-css3-fill" title="CSS3"></i>
+            <i class="ri-javascript-fill" title="JavaScript"></i>
+            <i class="devicon-typescript-plain"></i>
+            <i class="ri-reactjs-line" title="React"></i>
+            <i class="ri-git-branch-fill" title="Git"></i>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <a href="https://luiz-frontdev.github.io/Landing-Page-Responsiva/" target="_blank" class="projeto-link">
+                <div class="projetos-card">
+                    <img src="images/bendito gosto.png" alt="Projeto 1" class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="projeto-titulo">Landing Page Responsiva</h3>
+                        <p class="paragrafo-projetos">Loja virtual moderna com animações suaves e design responsivo.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://luiz-frontdev.github.io/Calculadora-de-IMC-Responsiva/" target="_blank" class="projeto-link">
+                <div class="projetos-card">
+                    <img src="images/calculadora imc.png" alt="Projeto 2" class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="projeto-titulo">Calculadora De IMC</h3>
+                        <p class="paragrafo-projetos">Calculadora de IMC responsiva com design moderno.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://luiz-frontdev.github.io/Calculadora-Basica/" target="_blank" class="projeto-link">
+                <div class="projetos-card">
+                    <img src="images/calculadora basica.png" alt="Projeto 3" class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="projeto-titulo">Calculadora Básica</h3>
+                        <p class="paragrafo-projetos">Calculadora básica com design moderno e operadores aritméticos
+                            funcionando perfeitamente.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="contato" class="contatos">
+        <h2 class="contato-titulo">Entre em Contato</h2>
+        <form class="contato-formulario" id="formulário" onsubmit="enviarWhats(event)">
+
+            <div class="nome-form">
+                <input type="text" placeholder="Seu Nome" required class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <input type="email" placeholder="Seu Email" required class="email-form" id="email">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite Sua Mensagem" required rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botão-form">Enviar Mensagem Ao Whatsapp</button>
+        </form>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

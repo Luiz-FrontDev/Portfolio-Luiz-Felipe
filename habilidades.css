@@ -1,0 +1,61 @@
+.habilidades {
+    padding: 6rem 2rem;
+}
+
+.habilidades-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.habilidades-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.habilidades-grid i {
+    font-size: 4rem;
+    color: #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+
+
+.ri-html5-fill:hover {
+    color: #FFA500;
+    transform: translateY(-5px);
+}
+
+.ri-css3-fill:hover {
+    color: #0288D1;
+    transform: translateY(-5px);
+}
+
+.ri-javascript-fill:hover {
+    color: yellow;
+    transform: translateY(-5px);
+}
+
+.devicon-typescript-plain:hover {
+    color: #0288d1;
+    transform: translateY(-5px);
+}
+
+.ri-reactjs-line:hover {
+    color: #4fc3f7;
+    transform: translateY(-5px);
+}
+
+.ri-git-branch-fill:hover {
+    color: #D75413;
+    transform: translateY(-5px);
+}
+
+[title] {
+    position: relative;
+    cursor: pointer;
+}

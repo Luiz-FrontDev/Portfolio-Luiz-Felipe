@@ -1,0 +1,59 @@
+nav {
+    margin: auto;
+    padding: 1.7rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(10,25,47,0.95);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0.5rem 8rem;
+    color: #e2e8f0;
+}
+
+.menu a,
+.menu a:visited {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* fallback para browsers antigos */
+@supports not (position: sticky) {
+    nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    body {
+        padding-top: 64px; /* ajuste se necessário */
+    }
+}
