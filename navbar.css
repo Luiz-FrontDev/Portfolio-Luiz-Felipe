@@ -45,7 +45,12 @@ nav {
     width: 100%;
 }
 
-/* fallback para browsers antigos */
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
 @supports not (position: sticky) {
     nav {
         position: fixed;
@@ -54,6 +59,8 @@ nav {
         top: 0;
     }
     body {
-        padding-top: 64px; /* ajuste se necessário */
+        padding-top: 64px;
     }
+
 }
+
